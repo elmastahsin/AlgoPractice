@@ -1,4 +1,4 @@
-package algo.Week1;
+package algo.week1;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

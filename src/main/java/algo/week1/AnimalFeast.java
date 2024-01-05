@@ -1,4 +1,4 @@
-package algo.Week1;
+package algo.week1;
 
 
 
@@ -9,7 +9,7 @@ public class AnimalFeast {
 
         System.out.println(isEligible(animal, dish));
         System.out.println(isEligible2(animal, dish));
-        System.out.println(isEligible3(animal, dish));
+
     }
 
     public static boolean isEligible(String animal, String dish) {
@@ -19,26 +19,9 @@ public class AnimalFeast {
     public static boolean isEligible2(String animal, String dish) {
         return (animal.charAt(0) + "" + animal.charAt(animal.length() - 1)).equals(dish.charAt(0) + "" + dish.charAt(dish.length() - 1));
     }
-    public static boolean isEligible3(String animal, String dish){
-        animal = animal.toLowerCase();
-        dish = dish.toLowerCase();
 
-        if(animal.length()>=2 && dish.length()>=2){
 
-            if(animal.substring(0,1).equals(dish.substring(0,1))&&
-                    animal.substring(animal.length()-1).equals(dish.substring(dish.length()-1))){
 
-                System.out.println("The dish's start and end letters are same with the animal's name");
-                return true;
-            }else{
-                System.out.println("The dish's start and end letters are NOT same with the animal's name");
-                return false;
-            }
-        }else{
-            return false;
-        }
-
-    }
 }
 
     /*
