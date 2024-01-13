@@ -7,17 +7,17 @@ public class FirstNonRepeatingVowel {
 
 
     public static void main(String[] args) {
-        int index = getIndexOfFirstNonRepeatingVowel_nestedLoop("google");
+        int index = getIndexOfFirstNonRepeatingVowelNestedLoop("google");
         System.out.println(index);
-        System.out.println(getIndexOfFirstNonRepeatingVowel_nestedLoop("bbddeeaffgi"));
-        System.out.println(getIndexOfFirstNonRepeatingVowel_nestedLoop("aaabbbeeeoouu"));
+        System.out.println(getIndexOfFirstNonRepeatingVowelNestedLoop("bbddeeaffgi"));
+        System.out.println(getIndexOfFirstNonRepeatingVowelNestedLoop("aaabbbeeeoouu"));
 
-        System.out.println(getIndexOfFirstNonRepeatingVowel_map("google"));
-        System.out.println(getIndexOfFirstNonRepeatingVowel_map("bbddeeaffgi"));
-        System.out.println(getIndexOfFirstNonRepeatingVowel_map("aaabbbeeeoouu"));
+        System.out.println(getIndexOfFirstNonRepeatingVowelMap("google"));
+        System.out.println(getIndexOfFirstNonRepeatingVowelMap("bbddeeaffgi"));
+        System.out.println(getIndexOfFirstNonRepeatingVowelMap("aaabbbeeeoouu"));
     }
 
-    static int getIndexOfFirstNonRepeatingVowel_map(String input) {
+    static int getIndexOfFirstNonRepeatingVowelMap(String input) {
         LinkedHashMap<Character, Integer> map = new LinkedHashMap<>();
         for (int i = 0; i < input.length(); i++) {
             char ch = input.charAt(i);
@@ -40,7 +40,7 @@ public class FirstNonRepeatingVowel {
         return -1;
     }
 
-    public static int getIndexOfFirstNonRepeatingVowel_nestedLoop(String input) {
+    public static int getIndexOfFirstNonRepeatingVowelNestedLoop(String input) {
         int length = input.length();
         for (int i = 0; i < length; i++) {
             char ch = input.charAt(i);
