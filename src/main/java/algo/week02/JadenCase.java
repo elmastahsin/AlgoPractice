@@ -1,4 +1,4 @@
-package algo.week2;
+package algo.week02;
 
 public class JadenCase {
     /*
